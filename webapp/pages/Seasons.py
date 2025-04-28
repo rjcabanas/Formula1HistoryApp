@@ -2,15 +2,15 @@ import streamlit as st
 import streamlit as st
 import pandas as pd
 
-df_races = pd.read_parquet(".\\silver\\races.parquet")
-df_race_results = pd.read_parquet(".\\silver\\results.parquet")
-df_drivers = pd.read_parquet(".\\silver\\driversDim.parquet")
-df_constructors = pd.read_parquet(".\\silver\\constructors.parquet")
-df_lap_data = pd.read_parquet(".\\silver\\lapsFactTable.parquet")
-status = pd.read_csv(".\\bronze\\status.csv")
-drivers_standings = pd.read_parquet(".\\silver\\driver_standings.parquet")
-constructors_standings = pd.read_parquet(".\\silver\\constructor_standings.parquet")
-seasons = pd.read_csv(".\\bronze\\seasons.csv")
+df_races = pd.read_parquet("silver/races.parquet")
+df_race_results = pd.read_parquet("silver/results.parquet")
+df_drivers = pd.read_parquet("silver/driversDim.parquet")
+df_constructors = pd.read_parquet("silver/constructors.parquet")
+df_lap_data = pd.read_parquet("silver/lapsFactTable.parquet")
+status = pd.read_csv("bronze/status.csv")
+drivers_standings = pd.read_parquet("silver/driver_standings.parquet")
+constructors_standings = pd.read_parquet("silver/constructor_standings.parquet")
+seasons = pd.read_csv("bronze/seasons.csv")
 
 def get_driver_champs(raceId_list:list) -> list:
     driver_champ_list = []

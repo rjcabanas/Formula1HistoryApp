@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-df_races = pd.read_parquet(".\\silver\\races.parquet")
-df_race_results = pd.read_parquet(".\\silver\\results.parquet")
-df_drivers = pd.read_parquet(".\\silver\\driversDim.parquet")
-df_lap_data = pd.read_parquet(".\\silver\\lapsFactTable.parquet")
-status = pd.read_csv(".\\bronze\\status.csv")
-drivers_standings = pd.read_parquet(".\\silver\\driver_standings.parquet")
+df_races = pd.read_parquet("silver/races.parquet")
+df_race_results = pd.read_parquet("silver/results.parquet")
+df_drivers = pd.read_parquet("silver/driversDim.parquet")
+df_lap_data = pd.read_parquet("silver/lapsFactTable.parquet")
+status = pd.read_csv("bronze/status.csv")
+drivers_standings = pd.read_parquet("silver/driver_standings.parquet")
 grand_prix_flags = {
                     "Malaysian Grand Prix": "https://flagcdn.com/w40/my.png",
                     "German Grand Prix": "https://flagcdn.com/w40/de.png",
